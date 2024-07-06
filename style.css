@@ -35,7 +35,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-1{
+.grid-1 {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
@@ -44,7 +44,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-2{
+.grid-2 {
   display: grid;
   column-gap: 1.6rem;
   row-gap: 1.6rem;
@@ -175,6 +175,7 @@ body {
   margin-top: 2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -397,10 +398,9 @@ body {
 }
 
 /* Marketplace */
-.section-card{
+.section-card {
   padding: 9.6rem;
   background-color: #f9f5f9;
-  margin-bottom: 3.2rem;
 }
 
 .div {
@@ -410,36 +410,36 @@ body {
   flex-direction: column;
 }
 
-.marketplace{
+.marketplace {
   box-shadow: 0 0 3rem rgb(117, 117, 117);
   overflow: hidden;
   transition: all 0.3s;
   border-radius: 5px;
 }
 
-.marketplace:hover{
+.marketplace:hover {
   transform: translateY(-1.2rem);
   box-shadow: 0 0 3rem rgb(168, 168, 168);
 }
 
-.marketplace-img{
+.marketplace-img {
   width: 100%;
 }
 
-.marketplace-1{
+.marketplace-1 {
   padding: 3.2rem;
 }
 
-.head{
+.head {
   text-align: center;
 }
 
-.card-title{
+.card-title {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(89, 83, 90);
-  background-color:rgb(223, 207, 224);
+  background-color: rgb(223, 207, 224);
   border-radius: 9px;
   text-transform: uppercase;
   margin-bottom: 1.4rem;
@@ -447,7 +447,7 @@ body {
   letter-spacing: 0.75px;
 }
 
-.card-text{
+.card-text {
   margin-bottom: 1.6rem;
   border-bottom: 0.4px solid #b2a6b3;
   padding-bottom: 0.6rem;
@@ -456,7 +456,7 @@ body {
   color: #433e43;
 }
 
-.card-attributes{
+.card-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -466,25 +466,25 @@ body {
   color: #706870;
 }
 
-.card-attribute{
+.card-attribute {
   display: flex;
   font-size: 1.7rem;
   font-weight: 400;
   gap: 1.6rem;
 }
 
-.card-icon{
+.card-icon {
   font-size: 2.4rem;
 }
 
-.all-cards{
+.all-cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .link:link,
-.link:visited{
+.link:visited {
   margin-top: 8rem;
   display: inline-block;
   text-decoration: none;
@@ -497,27 +497,27 @@ body {
 }
 
 /* NFT GALLERY */
-.section-gallery{
-  padding:1.2rem;
+.section-gallery {
+  padding: 1.2rem;
   background-color: #efe7f0;
 }
 
-.gallery-comment{
+.gallery-comment {
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
   justify-content: center;
 }
 
-.div-gallery{
+.div-gallery {
   margin-bottom: 3.2rem;
 }
 
-.head-text{
+.head-text {
   padding: 8.4rem;
 }
 
-.comment{
+.comment {
   font-size: 1.8rem;
   letter-spacing: 0.1px;
   line-height: 1.4;
@@ -526,7 +526,7 @@ body {
   margin-bottom: 1.6rem;
 }
 
-.salome{
+.salome {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -550,3 +550,214 @@ body {
 .gallery-item img:hover {
   transform: scale(1.1);
 }
+
+/* CTA */
+.section-cta{
+  padding: 4.8rem 0 12.8rem;
+  padding-top: 12rem !important;
+  background-color: #f9f5f9 !important;
+}
+
+.cta-container{
+  margin: 0 auto;
+  max-width: 110rem;
+  padding: 4.8rem 3.2rem;
+}
+
+.cta{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 0 2.4rem rgb(151, 151, 151);
+  border-radius: 9px;
+  gap: 4.8rem;
+  background-color: #e5d9e6;
+  overflow: hidden;
+}
+
+.cta-img-box{
+  background-image:
+  url("fibart-assets/form/girl.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+  opacity: 0.8;
+}
+
+.cta-text-box{
+  padding: 2.4rem;
+}
+
+.cta-h2{
+  margin-bottom: 3.2rem;
+}
+
+.cta-p{
+  font-size: 1.8rem;
+  color: #433e43;
+  line-height: 1.8;
+  margin-bottom: 3.6rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 3.2rem;
+}
+
+.cta-form div{
+  display:flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 0.4rem;
+  width: 90%;
+}
+
+label{
+  font-size: 1.8rem;
+}
+
+input,
+select{
+ padding: 1.4rem 1.2rem;
+}
+
+input,
+select,
+.btn-form{
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);  
+}
+
+.btn-form,
+.btn-form:link,
+.btn-form:visited{
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  align-self: end;
+  width: 90%;
+  padding:0.99rem 1.2rem ;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: #f2ecf3;
+  background-color: #433e43;
+}
+
+.btn-form:hover,
+.btn-form:active{
+  box-shadow: inset 0 0 1px 2px #535353;
+  background-color: rgb(177, 170, 170);
+  color: #433e43 ;
+}
+
+/* FOOTER */
+.footer{
+  padding:9.6rem 0;
+  border-top: 0.1px solid #dbdbdb;
+  background-color: #f9f5f9;
+}
+
+.footer-div{
+  padding: 4.8rem 7.2rem 4.8rem 7.2rem;
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2fr 2fr;
+  max-width: 150rem;
+  gap: 2rem;
+}
+
+.footer-div div{
+  font-size: 1.6rem;
+  color: #727272;
+}
+
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.footer-logo{
+  width: 35%;
+  border-radius: 100%;
+}
+
+.social-links{
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-link,
+.footer-link:link,
+.footer-link:visited{
+  font-size: 2.4rem;
+  color: #727272;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+  color:#4e4e4e;
+}
+
+.copyright{
+  font-size:1.5rem;
+  margin-top: 0.6rem;
+}
+
+.address-col{
+  justify-self: center;
+}
+
+.footer-heading{
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4.8rem;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.contact{
+list-style: none;  
+}
+
+.contacts{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contacts a,
+.contacts a:link,
+.contacts a:visited{
+  text-decoration: none;
+  color: #727272;
+}
+
+.contacts a:hover,
+.contacts a:active{
+  color: #4e4e4e;
+}
+
+.contact a,
+.contact a:link,
+.contact a:visited{
+  text-decoration: none;
+  color: #727272;
+}
+
+.contact a:hover,
+.contact a:active{
+  color: #4e4e4e;
+}
+
+
+
