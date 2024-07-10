@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    <link href="general.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -29,7 +30,7 @@
           src="fibart-assets/logos/logo.png"
         />
       </a>
-      <nav>
+      <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">How it works</a></li>
           <li><a class="main-nav-link" href="#">Marketplace</a></li>
@@ -37,6 +38,11 @@
           <li><a class="main-nav-link nav-nft" href="#">Free NFT avatar</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon
+        ><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -73,7 +79,7 @@
           </div>
         </div>
       </section>
-
+      <!--  -->
       <section class="section-featured">
         <h2 class="heading-featured-in">
           FIBART HAS BEEN FEATURED BY THESE COMPANIES
@@ -105,7 +111,7 @@
           <h2 class="heading-secondary">Your NFT journey in 4 simple steps</h2>
         </div>
 
-        <div class="container grid grid--2-cols">
+        <div class="container grid">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Create your free NFT avatar</h3>
@@ -300,13 +306,15 @@
             </div>
             <div class="comment">
               <span
-                ><em>"NFT's has revolutionized the art world and very suddenly
-                brought us to a new dimension of the future, so we should not
-                forget the features that art once possessed, in this case the
-                gallery of works that went online in the case of NFTs, we will
-                do our best to preserve the culture of the gallery and never
-                forget how good it is to share opinions about this or that work
-                face to face and expand human consciousness."</em>
+                ><em
+                  >"NFT's has revolutionized the art world and very suddenly
+                  brought us to a new dimension of the future, so we should not
+                  forget the features that art once possessed, in this case the
+                  gallery of works that went online in the case of NFTs, we will
+                  do our best to preserve the culture of the gallery and never
+                  forget how good it is to share opinions about this or that
+                  work face to face and expand human consciousness."</em
+                >
               </span>
               <div class="salome">
                 <span>—Salome Merabishvili</span>
@@ -351,18 +359,34 @@
           <div class="cta">
             <div class="cta-img-box" role="img" aria-label="robot women"></div>
             <div class="cta-text-box">
-              <h2 class="heading-secondary cta-h2">Get free NFT avatar and more!</h2>
-              <p class="cta-p">Fill the form to activate your email address for your avatar, get notifications for our upcoming NFT art exhibitions and other activities.</p>
+              <h2 class="heading-secondary cta-h2">
+                Get free NFT avatar and more!
+              </h2>
+              <p class="cta-p">
+                Fill the form to activate your email address for your avatar,
+                get notifications for our upcoming NFT art exhibitions and other
+                activities.
+              </p>
 
               <form class="cta-form" action="#">
                 <div>
                   <label for="full name">Full name</label>
-                  <input id="full-name" type="text" placeholder="Avtandil Kodaladze" required/>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Avtandil Kodaladze"
+                    required
+                  />
                 </div>
 
                 <div>
                   <label for="email">Email</label>
-                  <input id="email" type="email" placeholder="Fibart@gmail.com" required/>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Fibart@gmail.com"
+                    required
+                  />
                 </div>
 
                 <div>
@@ -388,48 +412,66 @@
     <footer class="footer">
       <div class="footer-div">
         <div class="footer-col">
-         <span>
-          <a href="#" >
-           <img class="footer-logo" alt="fibart logo" src="fibart-assets/logos/footer-logo.png"/>
-          </a>
-         </span>
-         <ul class="social-links">
-          <li><a class="footer-link" href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a class="footer-link" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>          
-         </ul>
-         <p class="copyright">Copyright © 2024 all right reserved by Avtandil Kodaladze.</p>
-       </div>
+          <span>
+            <a href="#">
+              <img
+                class="footer-logo"
+                alt="fibart logo"
+                src="fibart-assets/logos/footer-logo.png"
+              />
+            </a>
+          </span>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright © 2024 all right reserved by Avtandil Kodaladze.
+          </p>
+        </div>
 
-       <div class="address-col">
-        <p class="footer-heading">Contact us</p>
-        <div class="footer-flex">
-        <p class="address">Address: Georgia, Gori, 1400.</p>
-         <ul class="contacts contact">
-          <li><a href="tel:995568764064">+995-568-***-***</a></li>
-          <li><a href="mailto:Fibart@gmail.com">Fibart@gmail.com</a></li>
-         </ul>
-       </div>
-      </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <div class="footer-flex">
+            <p class="address">Address: Georgia, Gori, 1400.</p>
+            <ul class="contacts contact">
+              <li><a href="tel:995568764064">+995-568-***-***</a></li>
+              <li><a href="mailto:Fibart@gmail.com">Fibart@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
 
-       <div class="address-col">
-        <p class="footer-heading">Company</p>
-         <ul class="footer-flex contact ">
-          <li><a href="#">About Fibart</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Careers</a></li>
-         </ul>
-       </div>
+        <div class="address-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-flex contact">
+            <li><a href="#">About Fibart</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
 
-       <div class="address-col">
-        <p class="footer-heading">Resources</p>
-         <ul class="footer-flex contact ">
-          <li><a href="#">Help center</a></li>
-          <li><a href="#">white paper</a></li>
-          <li><a href="#">Privacy and terms</a></li>
-         </ul>
-       </div>
+        <div class="address-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-flex contact">
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">white paper</a></li>
+            <li><a href="#">Privacy and terms</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
