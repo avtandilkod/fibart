@@ -19,6 +19,9 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+
     <title>Fiburt.Future of art</title>
   </head>
   <body>
@@ -32,10 +35,10 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Marketplace</a></li>
-          <li><a class="main-nav-link" href="#">NFT gallery</a></li>
-          <li><a class="main-nav-link nav-nft" href="#">Free NFT avatar</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#marketplace">Marketplace</a></li>
+          <li><a class="main-nav-link" href="#gallery">NFT gallery</a></li>
+          <li><a class="main-nav-link nav-nft" href="#cta">Free NFT avatar</a></li>
         </ul>
       </nav>
 
@@ -44,6 +47,7 @@
         ><ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
+    
     <main>
       <section class="section-hero">
         <div class="section-div">
@@ -59,8 +63,8 @@
               </p>
             </div>
             <div class="buttons">
-              <a href="#" class="btn button-1">Start NFT journey</a>
-              <a href="#" class="btn button-2">Learn more &darr;</a>
+              <a href="#cta" class="btn button-1">Start NFT journey</a>
+              <a href="#how" class="btn button-2">Learn more &darr;</a>
             </div>
           </div>
           <div class="artists">
@@ -105,7 +109,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="how">
         <div class="div-how container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">Your NFT journey in 4 simple steps</h2>
@@ -185,7 +189,7 @@
         </div>
       </section>
 
-      <section class="section-card">
+      <section class="section-card" id="marketplace">
         <div class="div-how container div">
           <span class="subheading">MARKETPLACE</span>
           <h2 class="heading-secondary">Fibart's most popular NFT's</h2>
@@ -297,7 +301,7 @@
         </div>
       </section>
 
-      <section class="section-gallery">
+      <section class="section-gallery" id="gallery">
         <div class="gallery-comment">
           <div class="head-text">
             <div class="div-gallery container">
@@ -354,7 +358,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="cta-container">
           <div class="cta">
             <div class="cta-img-box" role="img" aria-label="robot women"></div>
@@ -439,7 +443,7 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright © 2024 all right reserved by Avtandil Kodaladze.
+            Copyright © <span class="year">2024</span>  all right reserved by Avtandil Kodaladze.
           </p>
         </div>
 
