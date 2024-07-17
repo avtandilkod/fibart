@@ -1,0 +1,8 @@
+{
+  "icons": [
+    { "src": "fibart-assets/logos/cut.png",
+      "type": "image/png", "sizes":"192x192"},
+      { "src": "fibart-assets/logos/cut.png",
+      "type": "image/png", "sizes":"512x512"}
+  ]
+}
