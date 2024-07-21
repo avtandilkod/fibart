@@ -170,13 +170,26 @@ body {
   margin: auto;
 }
 
+/* .section-hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(17, 17, 17, 0.863),
+      rgba(32, 32, 32, 0.363)
+    ),
+    url("fibart-assets/hero/hero-min.png");
+  background-size: cover;
+  background-position: center;
+  padding: 7.2rem 0;
+  height: 55rem;
+} */
+
 .section-hero {
   background-image: linear-gradient(
       to right bottom,
       rgba(17, 17, 17, 0.863),
       rgba(32, 32, 32, 0.363)
     ),
-    url("fibart-assets/hero/main-img.png");
+    url("fibart-assets/hero/main-img.webp");
   background-size: cover;
   background-position: center;
   padding: 7.2rem 0;
